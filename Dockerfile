@@ -77,7 +77,7 @@ RUN cp $HOME/project_fiscal_hr/odoo.sh / && \
 
 WORKDIR $HOME/odoo
 
-# RUN git apply $HOME/project_fiscal_hr/odoo-patch.patch
+RUN git apply $HOME/project_fiscal_hr/pos_validate_wait/pos_print_receipt_after_order_processed.patch
 
 ENV PGHOST=db \
     PGPORT=5432 \
