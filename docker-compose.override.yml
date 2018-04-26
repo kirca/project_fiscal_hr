@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  odoo:
+    volumes:
+      - '.odoo/odoo:/home/odoo/odoo'
+      - '.:/home/odoo/project_fiscal_hr'
